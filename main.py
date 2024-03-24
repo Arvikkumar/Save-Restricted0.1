@@ -65,7 +65,7 @@ def progress(current, total, message, type):
 # start command
 @bot.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-	bot.send_message(message.chat.id, f"**__👋 Hi** **{message.from_user.mention}**, **I am Save Restricted Bot, I can send you restricted content by it's post link__**\n\n{USAGE}",
+	bot.send_message(message.chat.id, f"**__👋 Hi** **{message.from_user.https://t.me/GlobalReaders09}**, **I am Save Restricted Bot, I can send you restricted content by it's post link__**\n\n{USAGE}",
 	reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Update Channel", url="https://t.me/GlobalReaders09")]]), reply_to_message_id=message.id)
 
 
@@ -264,17 +264,17 @@ then send post/s link__**
 https://t.me/b/botusername/4321
 ```
 
-**MULTI POSTS**
+****
 
-**__send public/private posts link as explained above with formate "from - to" to send multiple messages like below__**
+****
 
 ```
-https://t.me/xxxx/1001-1010
 
-https://t.me/c/xxxx/101 - 120
+
+
 ```
 
-**__note that space in between doesn't matter__**
+**_**
 """
 
 
