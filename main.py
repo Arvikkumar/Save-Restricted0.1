@@ -249,34 +249,12 @@ def get_message_type(msg: pyrogram.types.messages_and_media.message.Message):
 
 USAGE = """**FOR PUBLIC CHATS**
 
-**__just send post/s link__**
+**__just send post/ link__**
 
 **FOR PRIVATE CHATS**
 
-**__first send invite link of the chat (unnecessary if the account of string session already member of the chat)
-then send post/s link__**
-
-** **
-
-** ** '/b/', ** **
-
-```
-
-```
-
-** **
-
-** **
-
-```
-
-
-
-```
-
-**_**
-"""
-
+**__first send invite link of the chat (unnecessary if you are member of that chat)
+then send post/ link__**
 
 # infinty polling
 bot.run()
