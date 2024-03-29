@@ -65,7 +65,7 @@ def progress(current, total, message, type):
 # start command
 @bot.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
-	bot.send_message(message.chat.id, f"**__👋 Hi** **{message.from_user.mention}**, **I am Save Restricted Bot, I can send you restricted content by it's post link__**\n\n{USAGE}",
+	bot.send_message(message.chat.id, f"**__👋 Hi** **{message.from_user.mention}**, **𝙄 𝙖𝙢 𝙎𝙖𝙫𝙚 𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩𝙚𝙙 𝘽𝙤𝙩, 𝙄 𝙘𝙖𝙣 𝙨𝙚𝙣𝙙 𝙮𝙤𝙪 𝙧𝙚𝙨𝙩𝙧𝙞𝙘𝙩𝙚𝙙 𝙘𝙤𝙣𝙩𝙚𝙣𝙩 𝙗𝙮 𝙞𝙩'𝙨 𝙥𝙤𝙨𝙩 𝙡𝙞𝙣𝙠**\n\n{USAGE}",
 	reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Update Channel", url="https://t.me/GlobalReaders09")]]), reply_to_message_id=message.id)
 
 
@@ -247,13 +247,14 @@ def get_message_type(msg: pyrogram.types.messages_and_media.message.Message):
 	except: pass
 
 
-USAGE = """**FOR PUBLIC CHATS**
+USAGE = """**🔗FOR PUBLIC CHATS
+just send post link\n🔗 सार्वजनिक समूह के लिए
+बस पोस्ट लिंक भेजें**
 
-**__just send post/s link__**
+**🔗FOR PRIVATE GROUP/n🔗निजी समूह के लिए**
 
-**FOR PRIVATE CHATS**
-
-**__first send invite link of the chat (unnecessary if you are member of that chat) then send post/s link__** """
+**__⭕Firstly, send the invitation link of that group (this step isn't necessary if you're already a member of that group). After that, share the link to the post
+/n⭕सबसे पहले, कृपया उस समूह का निमंत्रण लिंक भेजें (यदि आप पहले से ही उस समूह के सदस्य हैं तो यह चरण आवश्यक नहीं है)। इसके बाद पोस्ट का लिंक शेयर करो__** """
 
 # infinty polling
 bot.run()
